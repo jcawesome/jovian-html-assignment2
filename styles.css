@@ -10,11 +10,14 @@ body {
 }
 
 #main {
-    background-image: url('Background.png');
-    color: #FFFFFF;
     width: 100%;
     height: 1024px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url('./background_images/Background_mobile.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
+
 
 h1 {
     font-family: 'Libre Caslon Display';
@@ -22,6 +25,7 @@ h1 {
     font-weight: 400;
     font-size: 50px;
     line-height: 62px;
+    color: #FFFFFF;
 }
 
 h2 {
@@ -35,8 +39,10 @@ h2 {
 }
 
 #navbar {
-    padding: 32px 32px auto 32px;
+    padding: 32px;
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 #web-title {
@@ -48,18 +54,48 @@ h2 {
     color: #FFFFFF;
 }
 
-#hamburger{
+#hamburger {
     display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 4.25px;
 }
 
 .title-center {
-    
+    margin: 200px 32px auto 32px;
 }
 
-.white-rectangle {
+.title-white-rectangle {
     width: 90px;
     height: 15px;
     background: #FFFFFF;
+}
+
+.title-description {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: #FFFFFF;
+    margin-bottom: 32px;
+}
+
+.title-learn-more {
+    width: 153px;
+    height: 42px;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .blog-card {
