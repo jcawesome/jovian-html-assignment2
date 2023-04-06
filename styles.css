@@ -26,6 +26,7 @@ h1 {
     font-size: 50px;
     line-height: 62px;
     color: #FFFFFF;
+    margin: 32px auto 32px auto;
 }
 
 h2 {
@@ -184,6 +185,10 @@ h2 {
         background-position: center center;
     }
 
+    .title-description {
+        width: 85%;
+    }
+
     h1 {
         font-family: 'Libre Caslon Display';
         font-style: normal;
@@ -239,40 +244,7 @@ h2 {
 @media screen and (min-width:768px) {
 
     /* CSS rules for screens with a minimum width of 768px */
-    #hamburger {
-        display: none;
-    }
-
-    .menu-list {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 35px;
-
-    }
-
-    .menu-list-item {
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 22px;
-        color: #FFFFFF;
-    }
-
-    .get-started-box {
-
-        box-sizing: border-box;
-        display: flex;
-        text-align: center;
-        /* justify-content: center; */
-        border: 2px solid #FFFFFF;
-        border-radius: 10px;
-        width: 150px;
-        height: 42px;
-        position: relative;
-        top: -10px;
-    }
+    
 
     #main {
         width: 100%;
@@ -283,12 +255,21 @@ h2 {
         background-position: center center;
     }
 
+    .title-center {
+        margin: 200px auto auto 72px;
+        width: 80%
+    }
+
+    .title-description {
+        width: 75%;
+    }
+
     h1 {
         font-family: 'Libre Caslon Display';
         font-style: normal;
         font-weight: 400;
-        font-size: 80px;
-        line-height: 99px;
+        font-size: 70px;
+        line-height: 85px;
         color: #FFFFFF;
     }
 
@@ -328,6 +309,69 @@ h2 {
         line-height: 18px;
         color: #B7B7B7;
         margin-top: 32px;
+    }
+
+    .blog-card-title {
+        text-align: left;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 20px;
+        color: #000000;
+        margin-top: 26px;
+    }
+}
+
+/* Large Desktop (lrg) */
+@media screen and (min-width:992px) {
+
+    .title-center {
+        margin: 200px auto auto 72px;
+        width: 50%
+    }
+
+    .title-description {
+        width: 70%;
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    .menu-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 35px;
+
+    }
+
+    .menu-list-item {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: #FFFFFF;
+    }
+
+    .get-started-box {
+
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid #FFFFFF;
+        border-radius: 10px;
+        width: 150px;
+        height: 42px;
+        position: relative;
+        top: -10px;
+    }
+
+    .blog-card-body {
+        height: 400px;
     }
 
     .blog-card-title {
