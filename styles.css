@@ -54,6 +54,10 @@ h2 {
     color: #FFFFFF;
 }
 
+.menu-list {
+    display: none
+}
+
 #hamburger {
     display: flex;
     flex-direction: column;
@@ -98,9 +102,16 @@ h2 {
     align-items: center;
 }
 
-.blog-card {
-    margin: auto 32px auto 32px;
+.blog-cards-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 32px 0 32px;
+    gap: 0px;
 }
+
+/* .blog-card {
+    margin: auto 32px auto 32px;
+} */
 
 .blog-card-image>img {
     border-radius: 4px;
@@ -120,6 +131,10 @@ h2 {
     top: -30px;
     position: relative;
     z-index: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 300px;
 }
 
 .blog-card-date {
@@ -142,6 +157,7 @@ h2 {
     line-height: 24px;
     color: #000000;
     margin-top: 28px;
+    flex-grow: 1;
 }
 
 .blog-card-link {
@@ -153,4 +169,175 @@ h2 {
     line-height: 18px;
     color: #D9852C;
     margin-top: 18px;
+}
+
+/* Tablet (sm) */
+@media screen and (min-width:576px) {
+
+    /* CSS rules for screens with a minimum width of 576px */
+    #main {
+        width: 100%;
+        height: 1024px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url('./background_images/Background_tablet.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    h1 {
+        font-family: 'Libre Caslon Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 70px;
+        line-height: 87px;
+        color: #FFFFFF;
+    }
+
+    h2 {
+        margin: 82px 72px 56px 72px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 36px;
+        color: #000000;
+    }
+
+    .blog-cards-wrapper {
+        display: flex;
+        flex-direction: row;
+        max-width: 100%;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .blog-card {
+        max-width: 33%;
+    }
+
+    .blog-card-image>img {
+        height: 352px;
+    }
+
+    .blog-card-body {
+        height: 400px;
+    }
+
+    .blog-card-title {
+        text-align: left;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 18px;
+        color: #000000;
+        margin-top: 28px;
+    }
+}
+
+/* Desktop (md) */
+@media screen and (min-width:768px) {
+
+    /* CSS rules for screens with a minimum width of 768px */
+    #hamburger {
+        display: none;
+    }
+
+    .menu-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 35px;
+
+    }
+
+    .menu-list-item {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: #FFFFFF;
+    }
+
+    .get-started-box {
+
+        box-sizing: border-box;
+        display: flex;
+        text-align: center;
+        /* justify-content: center; */
+        border: 2px solid #FFFFFF;
+        border-radius: 10px;
+        width: 150px;
+        height: 42px;
+        position: relative;
+        top: -10px;
+    }
+
+    #main {
+        width: 100%;
+        height: 1024px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url('./background_images/Background_desktop.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    h1 {
+        font-family: 'Libre Caslon Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 80px;
+        line-height: 99px;
+        color: #FFFFFF;
+    }
+
+    h2 {
+        margin: 82px 72px 44px 72px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px;
+        color: #000000;
+    }
+
+    .blog-cards-wrapper {
+        display: flex;
+        flex-direction: row;
+        max-width: 100%;
+        gap: 20px;
+        justify-content: center;
+        margin: 0 72px 0 72px;
+    }
+
+    .blog-card-image>img {
+        height: 352px;
+    }
+
+    .blog-card-body {
+        height: 350px;
+    }
+
+    .blog-card-date {
+        text-align: left;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        color: #B7B7B7;
+        margin-top: 32px;
+    }
+
+    .blog-card-title {
+        text-align: left;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 30px;
+        color: #000000;
+        margin-top: 26px;
+    }
 }
