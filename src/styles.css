@@ -110,16 +110,30 @@ h2 {
     gap: 0px;
 }
 
-/* .blog-card {
-    margin: auto 32px auto 32px;
-} */
+.blog-card {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%; */
+}
+
+.blog-card-image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
 
 .blog-card-image>img {
+    object-fit: cover;
     border-radius: 4px;
     left: 0px;
     right: 0px;
     top: 0px;
     width: 100%;
+    /* height: auto; */
     position: relative;
     z-index: 2;
 }
@@ -244,7 +258,7 @@ h2 {
 @media screen and (min-width:768px) {
 
     /* CSS rules for screens with a minimum width of 768px */
-    
+
 
     #main {
         width: 100%;
