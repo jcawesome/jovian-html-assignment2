@@ -234,6 +234,14 @@ h2 {
         max-width: 33%;
     }
 
+    .blog-card-image{
+        display: block;
+    }
+    
+    .blog-card-image>img {
+        object-fit: fill;
+    }
+
     .blog-card-image>img {
         height: 352px;
     }
@@ -306,8 +314,16 @@ h2 {
         margin: 0 72px 0 72px;
     }
 
+    .blog-card-image{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    
     .blog-card-image>img {
-        height: 352px;
+        object-fit: cover;
     }
 
     .blog-card-body {
